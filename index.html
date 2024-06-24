@@ -3,11 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<title>My first three.js app</title>
+		<link href="./src/styles/tailwind.css" rel="stylesheet">
 		<style>
 			body { margin: 0; }
+			canvas { display: block; }
 		</style>
 	</head>
 	<body>
+		<div id="hud" class="absolute top-0 right-0 w-1/4 h-full bg-gray-800 text-white p-4">
+			<h2 class="text-xl font-bold mb-4">Tools</h2>
+			<button id="rotateCube" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2">Rotate Cube</button>
+			<button id="toggleDrag" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mb-2">Enable Drag</button>
+			<!-- Add more tools and elements here -->
+		</div>
 		<script type="module" src="/main.js"></script>
 	</body>
 </html>
